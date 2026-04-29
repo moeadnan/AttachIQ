@@ -791,7 +791,7 @@ def main() -> None:
 
         if not has_text and not has_image:
             _idle_pipeline(pipeline_slot)
-            st.warning("Give me a prompt, an attachment, or both. I won't judge. I'll triage.")
+            st.warning("Give me a prompt, an attachment, or both.")
             return
 
         image_path: str | None = None

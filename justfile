@@ -47,3 +47,19 @@ clean:
     rm -rf .venv .pytest_cache .ruff_cache __pycache__ build dist
     find . -type d -name __pycache__ -exec rm -rf {} +
     find . -type d -name .pytest_cache -exec rm -rf {} +
+
+# Stage all, commit when there are changes, then push (one recipe).
+#   just push
+#   just push "Your commit message"
+push *ARGS:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    git add -A
+    msg="${*:-chore: update}"
+    if git diff --cached --quiet; then
+      echo "Nothing to commit (clean index after add)."
+    else
+      git commit -m "$msg"
+    fi
+    git push
+
