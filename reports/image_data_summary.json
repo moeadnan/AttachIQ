@@ -1,0 +1,41 @@
+{
+  "total": 8000,
+  "per_class": {
+    "letter": 1000,
+    "form": 1000,
+    "report": 1000,
+    "email": 1000,
+    "handwritten": 1000,
+    "resume": 1000,
+    "presentation": 1000,
+    "invoice": 1000
+  },
+  "splits": {
+    "train": 6400,
+    "val": 800,
+    "test": 800
+  },
+  "data_mode": "rvlcdip_local_full_subset",
+  "source": "local:/Users/moe/datasets/attachiq/rvl-cdip",
+  "extracted_counts": {
+    "invoice": 1000,
+    "form": 1000,
+    "letter": 1000,
+    "report": 1000,
+    "email": 1000,
+    "resume": 1000,
+    "presentation": 1000,
+    "handwritten": 1000
+  },
+  "per_class_target": 1000,
+  "smoke_flag": false,
+  "force_synthetic": false,
+  "seed": 42,
+  "source_priority": [
+    "local_full: ~/datasets/attachiq/rvl-cdip",
+    "local_small: ~/datasets/attachiq/rvl_cdip-small-200",
+    "hf_mirror: vaclavpechtor/rvl_cdip-small-200",
+    "synthetic (smoke/tests only, opt-in)"
+  ],
+  "note": "Real RVL-CDIP only for final metrics. Synthetic mode is for smoke/tests and is NOT a substitute for real metrics."
+}

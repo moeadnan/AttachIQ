@@ -1,0 +1,10 @@
+{
+  "invoice": 0,
+  "form": 1,
+  "letter": 2,
+  "report": 3,
+  "email": 4,
+  "resume": 5,
+  "presentation": 6,
+  "handwritten": 7
+}

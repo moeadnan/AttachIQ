@@ -1,0 +1,50 @@
+{
+  "version": "hard_fusion_v2",
+  "total": 2360,
+  "unique_rubric_tuples": 590,
+  "images_per_pair": 4,
+  "challenge_types": {
+    "public_vs_internal_sharing": 448,
+    "archive_vs_delete": 448,
+    "redaction_modifier": 328,
+    "ambiguous_action": 320,
+    "vague_prompt": 320,
+    "sensitivity_modifier": 108,
+    "partial_extraction": 108,
+    "conflicting_instruction": 100,
+    "misleading_request_document_pair": 96,
+    "visually_similar_document": 84
+  },
+  "per_human_triage_label": {
+    "mismatch_unclear": 804,
+    "compatible_sensitive": 752,
+    "compatible_low_risk": 416,
+    "unsafe_external_action": 388
+  },
+  "per_document_class": {
+    "report": 332,
+    "invoice": 324,
+    "letter": 308,
+    "form": 308,
+    "presentation": 300,
+    "resume": 296,
+    "email": 260,
+    "handwritten": 232
+  },
+  "difficulty_distribution": {
+    "hard": 1676,
+    "very_hard": 536,
+    "adversarial_but_realistic": 148
+  },
+  "label_review_status_distribution": {
+    "rubric_assigned": 1676,
+    "borderline_reviewed": 684
+  },
+  "splits": {
+    "train": 1652,
+    "val": 354,
+    "test": 354
+  },
+  "labels_origin": "manual / rubric-aligned; never produced by classify_triage_v2 or by any model output. Disjoint image-index range from the 390-row evaluation-only hard challenge set (BASE_IDX=700).",
+  "intended_use": "training and validation of v2 fusion only; the test split is held out."
+}

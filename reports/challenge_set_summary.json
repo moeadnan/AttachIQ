@@ -1,0 +1,46 @@
+{
+  "n": 390,
+  "version": "hard_v1",
+  "challenge_types": {
+    "public_vs_internal_sharing": 62,
+    "archive_vs_delete": 55,
+    "vague_prompt": 50,
+    "redaction_modifier": 46,
+    "misleading_request_document_pair": 39,
+    "ambiguous_action": 30,
+    "partial_extraction": 29,
+    "sensitivity_modifier": 29,
+    "visually_similar_document": 27,
+    "conflicting_instruction": 23
+  },
+  "per_human_triage_label": {
+    "mismatch_unclear": 129,
+    "compatible_sensitive": 127,
+    "compatible_low_risk": 67,
+    "unsafe_external_action": 67
+  },
+  "per_document_class": {
+    "invoice": 73,
+    "form": 66,
+    "letter": 62,
+    "report": 62,
+    "email": 44,
+    "resume": 43,
+    "presentation": 31,
+    "handwritten": 9
+  },
+  "difficulty_distribution": {
+    "hard": 323,
+    "very_hard": 56,
+    "adversarial_but_realistic": 11
+  },
+  "label_review_status_distribution": {
+    "rubric_assigned": 334,
+    "borderline_reviewed": 54,
+    "revised_after_review": 2
+  },
+  "labels_origin": "manual / human-reviewed against the rubric in the spec; NEVER produced by attachiq.triage.policy.classify_triage or by any model output. Some labels deliberately diverge from the rule policy (vague prompts, archive vs delete, redaction modifiers, conflicting instructions).",
+  "intended_use": "evaluation only; not used for training, tuning, model selection, threshold tuning, or early stopping.",
+  "image_source": "real RVL-CDIP images extracted to data/raw/images/<class>/.",
+  "design_note": "This is the hard v1 challenge set. It replaces an earlier soft set archived under reports/ablation/challenge_set_original_soft*."
+}

@@ -1,0 +1,23 @@
+{
+  "version": "v2",
+  "total": 7200,
+  "per_class": {
+    "internal_sharing": 720,
+    "document_classification": 720,
+    "public_sharing": 720,
+    "information_extraction": 720,
+    "summarization": 720,
+    "ambiguous_or_unclear": 720,
+    "financial_extraction": 720,
+    "redaction_or_safe_transform": 720,
+    "delete_permanent": 720,
+    "archive_retain": 720
+  },
+  "splits": {
+    "train": 5760,
+    "val": 720,
+    "test": 720
+  },
+  "seed": 42,
+  "caveat": "synthetic templated text dataset; intended as a controlled benchmark."
+}

@@ -1,0 +1,12 @@
+{
+  "summarization": 0,
+  "information_extraction": 1,
+  "financial_extraction": 2,
+  "document_classification": 3,
+  "internal_sharing": 4,
+  "public_sharing": 5,
+  "delete_permanent": 6,
+  "archive_retain": 7,
+  "ambiguous_or_unclear": 8,
+  "redaction_or_safe_transform": 9
+}

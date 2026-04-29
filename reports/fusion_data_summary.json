@@ -1,0 +1,57 @@
+{
+  "version": "v2",
+  "total": 10000,
+  "feature_dim": 26,
+  "per_triage_class": {
+    "compatible_sensitive": 3728,
+    "compatible_low_risk": 2908,
+    "mismatch_unclear": 2054,
+    "unsafe_external_action": 1310
+  },
+  "per_input_mode": {
+    "text_plus_image": 4084,
+    "text_only": 2991,
+    "image_only": 2925
+  },
+  "splits": {
+    "train": 8000,
+    "val": 1000,
+    "test": 1000
+  },
+  "seed": 42,
+  "triage_class_order": [
+    "compatible_low_risk",
+    "compatible_sensitive",
+    "mismatch_unclear",
+    "unsafe_external_action"
+  ],
+  "feature_cols": [
+    "req_summarization",
+    "req_information_extraction",
+    "req_financial_extraction",
+    "req_document_classification",
+    "req_internal_sharing",
+    "req_public_sharing",
+    "req_delete_permanent",
+    "req_archive_retain",
+    "req_ambiguous_or_unclear",
+    "req_redaction_or_safe_transform",
+    "doc_invoice",
+    "doc_form",
+    "doc_letter",
+    "doc_report",
+    "doc_email",
+    "doc_resume",
+    "doc_presentation",
+    "doc_handwritten",
+    "text_conf",
+    "image_conf",
+    "has_text",
+    "has_image",
+    "text_entropy",
+    "image_entropy",
+    "text_margin",
+    "image_margin"
+  ],
+  "labels_origin": "policy-derived: classify_triage_v2(true_request, true_document)"
+}

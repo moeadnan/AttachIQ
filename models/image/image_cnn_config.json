@@ -1,0 +1,11 @@
+{
+  "channels": [
+    32,
+    64,
+    128,
+    256
+  ],
+  "double_conv": false,
+  "dropout": 0.3,
+  "num_classes": 8
+}

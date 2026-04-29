@@ -1,0 +1,401 @@
+{
+  "mapping_check": {
+    "code_mapping": {
+      "email": 2,
+      "form": 4,
+      "handwritten": 5,
+      "invoice": 6,
+      "letter": 7,
+      "presentation": 10,
+      "resume": 12,
+      "report": 14
+    },
+    "expected_mapping": {
+      "email": 2,
+      "form": 4,
+      "handwritten": 5,
+      "invoice": 6,
+      "letter": 7,
+      "presentation": 10,
+      "resume": 12,
+      "report": 14
+    },
+    "chainyo_idx_to_name": {
+      "0": "advertisement",
+      "1": "budget",
+      "2": "email",
+      "3": "file_folder",
+      "4": "form",
+      "5": "handwritten",
+      "6": "invoice",
+      "7": "letter",
+      "8": "memo",
+      "9": "news_article",
+      "10": "presentation",
+      "11": "questionnaire",
+      "12": "resume",
+      "13": "scientific_publication",
+      "14": "scientific_report",
+      "15": "specification"
+    },
+    "issues": [],
+    "ok": true
+  },
+  "shard_index_summary": {
+    "email": 13,
+    "form": 13,
+    "handwritten": 12,
+    "invoice": 13,
+    "letter": 12,
+    "presentation": 12,
+    "resume": 12,
+    "scientific_report": 12
+  },
+  "parquet_grid": "/Users/moe/Desktop/MoeIntel/DLFinalDemo/AttachIQ/reports/figures/parquet_label_check.png",
+  "parquet_samples": {
+    "inverted_mapping_for_reference": {
+      "2": "email",
+      "4": "form",
+      "5": "handwritten",
+      "6": "invoice",
+      "7": "letter",
+      "10": "presentation",
+      "12": "resume",
+      "14": "report"
+    },
+    "sampled_records": [
+      {
+        "attachiq_class": "invoice",
+        "chainyo_int": 6,
+        "chainyo_name": "invoice",
+        "shard": "train-00048-of-00119.parquet",
+        "row": 2619,
+        "image_size": [
+          754,
+          1000
+        ]
+      },
+      {
+        "attachiq_class": "invoice",
+        "chainyo_int": 6,
+        "chainyo_name": "invoice",
+        "shard": "train-00048-of-00119.parquet",
+        "row": 456,
+        "image_size": [
+          771,
+          1000
+        ]
+      },
+      {
+        "attachiq_class": "form",
+        "chainyo_int": 4,
+        "chainyo_name": "form",
+        "shard": "train-00033-of-00119.parquet",
+        "row": 102,
+        "image_size": [
+          754,
+          1000
+        ]
+      },
+      {
+        "attachiq_class": "form",
+        "chainyo_int": 4,
+        "chainyo_name": "form",
+        "shard": "train-00033-of-00119.parquet",
+        "row": 1126,
+        "image_size": [
+          754,
+          1000
+        ]
+      },
+      {
+        "attachiq_class": "letter",
+        "chainyo_int": 7,
+        "chainyo_name": "letter",
+        "shard": "train-00056-of-00119.parquet",
+        "row": 1003,
+        "image_size": [
+          754,
+          1000
+        ]
+      },
+      {
+        "attachiq_class": "letter",
+        "chainyo_int": 7,
+        "chainyo_name": "letter",
+        "shard": "train-00056-of-00119.parquet",
+        "row": 914,
+        "image_size": [
+          754,
+          1000
+        ]
+      },
+      {
+        "attachiq_class": "report",
+        "chainyo_int": 14,
+        "chainyo_name": "scientific_report",
+        "shard": "train-00108-of-00119.parquet",
+        "row": 571,
+        "image_size": [
+          754,
+          1000
+        ]
+      },
+      {
+        "attachiq_class": "report",
+        "chainyo_int": 14,
+        "chainyo_name": "scientific_report",
+        "shard": "train-00108-of-00119.parquet",
+        "row": 419,
+        "image_size": [
+          754,
+          1000
+        ]
+      },
+      {
+        "attachiq_class": "email",
+        "chainyo_int": 2,
+        "chainyo_name": "email",
+        "shard": "train-00018-of-00119.parquet",
+        "row": 2233,
+        "image_size": [
+          754,
+          1000
+        ]
+      },
+      {
+        "attachiq_class": "email",
+        "chainyo_int": 2,
+        "chainyo_name": "email",
+        "shard": "train-00018-of-00119.parquet",
+        "row": 356,
+        "image_size": [
+          754,
+          1000
+        ]
+      },
+      {
+        "attachiq_class": "resume",
+        "chainyo_int": 12,
+        "chainyo_name": "resume",
+        "shard": "train-00093-of-00119.parquet",
+        "row": 2418,
+        "image_size": [
+          754,
+          1000
+        ]
+      },
+      {
+        "attachiq_class": "resume",
+        "chainyo_int": 12,
+        "chainyo_name": "resume",
+        "shard": "train-00093-of-00119.parquet",
+        "row": 1728,
+        "image_size": [
+          754,
+          1000
+        ]
+      },
+      {
+        "attachiq_class": "presentation",
+        "chainyo_int": 10,
+        "chainyo_name": "presentation",
+        "shard": "train-00078-of-00119.parquet",
+        "row": 130,
+        "image_size": [
+          754,
+          1000
+        ]
+      },
+      {
+        "attachiq_class": "presentation",
+        "chainyo_int": 10,
+        "chainyo_name": "presentation",
+        "shard": "train-00078-of-00119.parquet",
+        "row": 122,
+        "image_size": [
+          754,
+          1000
+        ]
+      },
+      {
+        "attachiq_class": "handwritten",
+        "chainyo_int": 5,
+        "chainyo_name": "handwritten",
+        "shard": "train-00041-of-00119.parquet",
+        "row": 383,
+        "image_size": [
+          754,
+          1000
+        ]
+      },
+      {
+        "attachiq_class": "handwritten",
+        "chainyo_int": 5,
+        "chainyo_name": "handwritten",
+        "shard": "train-00041-of-00119.parquet",
+        "row": 895,
+        "image_size": [
+          784,
+          1000
+        ]
+      }
+    ]
+  },
+  "split_label_consistency": {
+    "train": {
+      "n": 6400,
+      "labels": [
+        "email",
+        "form",
+        "handwritten",
+        "invoice",
+        "letter",
+        "presentation",
+        "report",
+        "resume"
+      ],
+      "per_class": {
+        "presentation": 800,
+        "form": 800,
+        "email": 800,
+        "resume": 800,
+        "report": 800,
+        "invoice": 800,
+        "handwritten": 800,
+        "letter": 800
+      },
+      "unknown_labels": [],
+      "all_in_DOCUMENT_CLASSES": true
+    },
+    "val": {
+      "n": 800,
+      "labels": [
+        "email",
+        "form",
+        "handwritten",
+        "invoice",
+        "letter",
+        "presentation",
+        "report",
+        "resume"
+      ],
+      "per_class": {
+        "form": 100,
+        "letter": 100,
+        "presentation": 100,
+        "handwritten": 100,
+        "email": 100,
+        "report": 100,
+        "resume": 100,
+        "invoice": 100
+      },
+      "unknown_labels": [],
+      "all_in_DOCUMENT_CLASSES": true
+    },
+    "test": {
+      "n": 800,
+      "labels": [
+        "email",
+        "form",
+        "handwritten",
+        "invoice",
+        "letter",
+        "presentation",
+        "report",
+        "resume"
+      ],
+      "per_class": {
+        "resume": 100,
+        "email": 100,
+        "handwritten": 100,
+        "report": 100,
+        "invoice": 100,
+        "form": 100,
+        "letter": 100,
+        "presentation": 100
+      },
+      "unknown_labels": [],
+      "all_in_DOCUMENT_CLASSES": true
+    }
+  },
+  "label_map_consistency": {
+    "saved_label_map": {
+      "invoice": 0,
+      "form": 1,
+      "letter": 2,
+      "report": 3,
+      "email": 4,
+      "resume": 5,
+      "presentation": 6,
+      "handwritten": 7
+    },
+    "expected_label_map": {
+      "invoice": 0,
+      "form": 1,
+      "letter": 2,
+      "report": 3,
+      "email": 4,
+      "resume": 5,
+      "presentation": 6,
+      "handwritten": 7
+    },
+    "match": true
+  },
+  "preprocessing_grid": "/Users/moe/Desktop/MoeIntel/DLFinalDemo/AttachIQ/reports/figures/preprocessing_consistency.png",
+  "preprocessing_stats": {
+    "eval": {
+      "shape": [
+        1,
+        224,
+        224
+      ],
+      "min": -1.0,
+      "max": 1.0,
+      "mean": 0.8565229177474976,
+      "std": 0.37465235590934753
+    },
+    "train_run_1": {
+      "shape": [
+        1,
+        224,
+        224
+      ],
+      "min": -1.0,
+      "max": 0.872593879699707,
+      "mean": 0.5992618203163147,
+      "std": 0.37695378065109253
+    }
+  },
+  "demo_samples": [
+    {
+      "demo_file": "invoice_demo.png",
+      "claimed_class": "invoice",
+      "source_in_raw": "data/raw/images/invoice/invoice_000000.png",
+      "source_exists": true,
+      "size_bytes": 35037
+    },
+    {
+      "demo_file": "letter_demo.png",
+      "claimed_class": "letter",
+      "source_in_raw": "data/raw/images/letter/letter_000000.png",
+      "source_exists": true,
+      "size_bytes": 40124
+    },
+    {
+      "demo_file": "presentation_demo.png",
+      "claimed_class": "presentation",
+      "source_in_raw": "data/raw/images/presentation/presentation_000000.png",
+      "source_exists": true,
+      "size_bytes": 23808
+    },
+    {
+      "demo_file": "resume_demo.png",
+      "claimed_class": "resume",
+      "source_in_raw": "data/raw/images/resume/resume_000000.png",
+      "source_exists": true,
+      "size_bytes": 30078
+    }
+  ],
+  "extracted_grid": "/Users/moe/Desktop/MoeIntel/DLFinalDemo/AttachIQ/reports/figures/image_samples_grid.png"
+}

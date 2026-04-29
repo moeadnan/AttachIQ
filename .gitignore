@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+data/raw/images/
+data/processed/*.csv
+data/splits/*.csv
+data/splits/*.npy
+models/text/text_model.pt
+models/text/tokenizer/
+models/image/image_cnn.pt
+models/fusion/fusion_mlp.pt

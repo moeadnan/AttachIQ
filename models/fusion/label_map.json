@@ -1,0 +1,6 @@
+{
+  "compatible_low_risk": 0,
+  "compatible_sensitive": 1,
+  "mismatch_unclear": 2,
+  "unsafe_external_action": 3
+}
