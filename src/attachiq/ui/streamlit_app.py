@@ -775,7 +775,7 @@ def main() -> None:
                     Governance checkpoint
                   </div>
                   <div style="margin-top:0.35rem;">
-                    Give me a prompt, an attachment, or both. I won't judge. I'll triage.
+                    Give me a prompt, an attachment, or both.
                   </div>
                 </div>
                 """,
