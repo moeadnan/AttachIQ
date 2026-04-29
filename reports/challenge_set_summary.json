@@ -41,6 +41,5 @@
   },
   "labels_origin": "manual / human-reviewed against the rubric in the spec; NEVER produced by attachiq.triage.policy.classify_triage or by any model output. Some labels deliberately diverge from the rule policy (vague prompts, archive vs delete, redaction modifiers, conflicting instructions).",
   "intended_use": "evaluation only; not used for training, tuning, model selection, threshold tuning, or early stopping.",
-  "image_source": "real RVL-CDIP images extracted to data/raw/images/<class>/.",
-  "design_note": "This is the hard v1 challenge set. It replaces an earlier soft set archived under reports/ablation/challenge_set_original_soft*."
+  "image_source": "real RVL-CDIP images extracted to data/raw/images/<class>/."
 }

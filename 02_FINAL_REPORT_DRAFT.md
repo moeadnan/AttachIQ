@@ -165,7 +165,7 @@ Per-model held-out test metrics on real RVL-CDIP image data:
 |--------------|----------|----------|---------|
 | Text classifier (10 classes) | 1.0000 | 1.0000 | 66.4 M |
 | Image CNN (deep, 5 blocks @ 64/128/256/384/384) | 0.7888 | 0.7864 | 2,586,568 |
-| Fusion MLP (26 → 128 → 64 → 4) | 0.9603 | 0.9638 | 11,972 |
+| Fusion MLP (26 → 128 → 64 → 4) | 0.9580 | 0.9638 | 11,972 |
 
 (Text near-saturation reflects the templated text dataset, not a real
 cap on the model.)
@@ -190,10 +190,10 @@ comparison fusion has to beat.
 
 | Method               | Accuracy | Macro F1 |
 |----------------------|---:|---:|
-| text-only baseline   | 0.6020 | 0.5424 |
+| text-only baseline   | 0.5330 | 0.5424 |
 | image-only baseline  | 0.6020 | 0.4497 |
 | **rule-table baseline** | **0.9610** | **0.9664** |
-| learned fusion       | 0.9603 | 0.9638 |
+| learned fusion       | 0.9580 | 0.9638 |
 
 - Best method by macro F1: rule-table baseline (0.9664), fusion
   0.0026 behind. The two are effectively tied within noise; the rule
@@ -208,7 +208,7 @@ comparison fusion has to beat.
 |----------------------|---:|---:|
 | text-only baseline   | 0.5641 | 0.5089 |
 | image-only baseline  | 0.3795 | 0.2424 |
-| rule-table baseline  | 0.7821 | 0.7640 |
+| rule-table baseline  | 0.7718 | 0.7640 |
 | **learned fusion**   | **0.8256** | **0.8207** |
 
 - Fusion clearly beats the rule on this distribution (Δ = +0.057

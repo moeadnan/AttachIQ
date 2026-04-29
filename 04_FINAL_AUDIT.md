@@ -8,7 +8,10 @@ attachiq/
 ├── uv.lock
 ├── justfile
 ├── README.md
-├── AttachIQ_Proposal.md
+├── 01_AttachIQ_Proposal.md
+├── 02_FINAL_REPORT_DRAFT.md
+├── 03_IMPLEMENTATION_JOURNEY.md
+├── 04_FINAL_AUDIT.md                                         (this file)
 ├── data/
 │   ├── raw/images/<8 classes>/*.png                         (8,000 real RVL-CDIP)
 │   ├── processed/text_prompts.csv                           (7,200 prompts, 10 classes)
@@ -30,9 +33,6 @@ attachiq/
 │   └── fusion/                                              (Fusion MLP, 11,972 params)
 │       └── fusion_mlp.pt + arch.json + variant.txt + label_map.json
 ├── reports/
-│   ├── FINAL_AUDIT.md                                       (this file)
-│   ├── FINAL_REPORT_DRAFT.md
-│   ├── IMPLEMENTATION_JOURNEY.md
 │   ├── metrics_summary.json
 │   ├── evaluation_summary.md
 │   ├── text_metrics.json + text_data_summary.json
@@ -80,7 +80,7 @@ attachiq/
 | 8 | `python -m attachiq.training.train_fusion --source union` | Selected `big` variant (26 → 128 → 64 → 4, 11,972 params) |
 | 9 | `python -m attachiq.evaluation.evaluate` | wrote `reports/metrics_summary.json` and `reports/evaluation_summary.md` |
 | 10| `python -m attachiq.inference.cli --text … --image …` | End-to-end OK, JSON output |
-| 11| `just challenge`, `just run-baseline`, `just evaluate`, `just data`, `just test` | All passed |
+| 11| `just install`, `just data`, `just train`, `just evaluate`, `just evaluate-image`, `just test`, `just cli` | All passed |
 | 12| `just demo` | Streamlit launches at http://localhost:8501 (verified) |
 
 ## 3. Pass/fail checklist
@@ -117,9 +117,9 @@ attachiq/
 |---|---:|---:|
 | Text classifier (10 classes) | 1.0000 | 1.0000 |
 | Image CNN (deep, unchanged from training) | 0.7888 | 0.7864 |
-| Fusion MLP                | 0.9603 | 0.9638 |
+| Fusion MLP                | 0.9580 | 0.9638 |
 | **Rule-table baseline**   | **0.9610** | **0.9664** |
-| Text-only baseline        | 0.6020 | 0.5424 |
+| Text-only baseline        | 0.5330 | 0.5424 |
 | Image-only baseline       | 0.6020 | 0.4497 |
 
 ### Human-reviewed hard challenge set (n = 390)
@@ -127,7 +127,7 @@ attachiq/
 | Method                | Accuracy | Macro F1 |
 |---|---:|---:|
 | **Learned fusion**    | **0.8256** | **0.8207** |
-| Rule-table baseline   | 0.7821 | 0.7640 |
+| Rule-table baseline   | 0.7718 | 0.7640 |
 | Text-only baseline    | 0.5641 | 0.5089 |
 | Image-only baseline   | 0.3795 | 0.2424 |
 

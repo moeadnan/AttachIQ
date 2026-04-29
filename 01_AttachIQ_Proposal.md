@@ -187,8 +187,8 @@ only.
 
 - A reproducible PyTorch repository.
 - Three trained models (text DistilBERT, scratch CNN, fusion MLP).
-- A 19-recipe `justfile` covering data, training, evaluation, demo,
-  and tests.
+- A `justfile` covering data preparation, model training, evaluation,
+  demo, CLI inference, testing, and cleanup.
 - Pydantic v2 contracts and structured JSON output.
 - A Streamlit demo.
 - A held-out test evaluation, a 390-row human-reviewed hard challenge

@@ -164,13 +164,13 @@ covering all three test sets.
 
 | Evaluation                          | Method               | Accuracy | Macro F1 |
 |-------------------------------------|----------------------|---:|---:|
-| Standard test (n = 1000)            | text-only baseline   | 0.6020 | 0.5424 |
+| Standard test (n = 1000)            | text-only baseline   | 0.5330 | 0.5424 |
 | Standard test (n = 1000)            | image-only baseline  | 0.6020 | 0.4497 |
 | Standard test (n = 1000)            | rule-table baseline  | 0.9610 | **0.9664** |
-| Standard test (n = 1000)            | learned fusion       | 0.9603 | 0.9638 |
+| Standard test (n = 1000)            | learned fusion       | 0.9580 | 0.9638 |
 | Hard challenge (n = 390)            | text-only baseline   | 0.5641 | 0.5089 |
 | Hard challenge (n = 390)            | image-only baseline  | 0.3795 | 0.2424 |
-| Hard challenge (n = 390)            | rule-table baseline  | 0.7821 | 0.7640 |
+| Hard challenge (n = 390)            | rule-table baseline  | 0.7718 | 0.7640 |
 | Hard challenge (n = 390)            | **learned fusion**   | **0.8256** | **0.8207** |
 | Hard rubric fusion test (n = 354)   | text-only baseline   | 0.5593 | 0.4876 |
 | Hard rubric fusion test (n = 354)   | image-only baseline  | 0.4237 | 0.2851 |
@@ -191,7 +191,7 @@ covering all three test sets.
 Total project parameters ≈ 69 M (DistilBERT 66.4 M, image CNN 2.59 M,
 fusion MLP 12 K). All under the rubric caps.
 
-Latency: mean 5–6 ms per pipeline call after warm-up, p95 ≈ 9–12 ms.
+Latency: mean 5–6 ms per pipeline call after warm-up, p95 ≈ 9 ms.
 
 ## Demo
 

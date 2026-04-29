@@ -6,9 +6,9 @@
 > documentation lives in:
 >
 > - `README.md` — developer/project README
-> - `AttachIQ_Proposal.md` — proposal
-> - `reports/FINAL_REPORT_DRAFT.md` — academic technical report
-> - `reports/FINAL_AUDIT.md` — single canonical evidence pack
+> - `01_AttachIQ_Proposal.md` — proposal
+> - `02_FINAL_REPORT_DRAFT.md` — academic technical report
+> - `04_FINAL_AUDIT.md` — single canonical evidence pack
 >
 > If a number disagrees between this file and any of the four above,
 > trust the technical docs.
@@ -213,7 +213,7 @@ performed.
 | Image CNN B, deep, selected | 2.59M | Image test, n=800 | 0.7888 | 0.7864 | Not measured per-arch | Final production image classifier |
 | Text classifier, DistilBERT | 66.37M | Text test, n=720 | 1.0000 | 1.0000 | Not measured per-component | Fine-tuned pretrained model; templated-data caveat |
 | Fusion MLP, selected | 11,972 | Hard rubric fusion test, n=354 | 0.9040 | 0.8963 | Not measured per-component | Final learned multimodal fusion model |
-| End-to-end pipeline, standard | 68.97M total | Standard test, n=1000 | 0.9603 | 0.9638 | Mean ≈ 5.7ms, p95 ≈ 9–12ms | Rule baseline slightly leads: 0.9664 macro F1 |
+| End-to-end pipeline, standard | 68.97M total | Standard test, n=1000 | 0.9580 | 0.9638 | Mean ≈ 5.7ms, p95 ≈ 9ms | Rule baseline slightly leads: 0.9664 macro F1 |
 | End-to-end pipeline, hard challenge | 68.97M total | Hard challenge, n=390 | 0.8256 | 0.8207 | Same pipeline latency | Fusion leads rule: 0.7640 rule macro F1 |
 | End-to-end pipeline, hard rubric test | 68.97M total | Hard rubric fusion test, n=354 | 0.9040 | 0.8963 | Same pipeline latency | Fusion leads rule: 0.8628 rule macro F1 |
 
